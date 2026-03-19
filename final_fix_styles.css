@@ -1,0 +1,35 @@
+
+/* === 최종 UI 수정 (아이폰 기준) === */
+
+/* 1. 마지막 텍스트 (구청장) 중앙 정렬 */
+.modal h3:last-of-type {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+/* 2. 뒤로가기 버튼 (오른쪽 아래, 아이폰 safe 느낌) */
+.back {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+/* 아이콘 크기 */
+.back svg {
+    width: 22px;
+    height: 22px;
+}
