@@ -1,0 +1,33 @@
+
+/* === 추가 수정 === */
+
+/* 1. 상세정보 텍스트 중앙 정렬 */
+.modal {
+    text-align: center;
+}
+
+/* 2. 뒤로가기 버튼 원형 */
+.back {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/* 아이콘 크기 */
+.back svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* 버튼 위치 (선택) */
+.back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
