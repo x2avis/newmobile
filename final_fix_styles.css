@@ -1,34 +1,35 @@
+/* === 수정 v3 (정확 위치 보정) === */
 
-/* === 최종 UI 수정 (아이폰 기준) === */
-
-/* 1. 마지막 텍스트 (구청장) 중앙 정렬 */
+/* 1. 구청장 텍스트 완전 중앙 */
 .modal h3:last-of-type {
     text-align: center;
-    width: 100%;
-    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
     margin-top: 10px;
 }
 
-/* 2. 뒤로가기 버튼 (오른쪽 아래, 아이폰 safe 느낌) */
+/* 2. 뒤로가기 버튼 - 카드 왼쪽 아래에 걸치기 */
 .back {
     width: 45px;
     height: 45px;
     border-radius: 50%;
 
     position: fixed;
-    right: 15px;
-    bottom: 30px;
+    left: calc(50% - 160px);
+    bottom: 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
     z-index: 9999;
 }
 
-/* 아이콘 크기 */
+/* 아이콘 */
 .back svg {
     width: 22px;
     height: 22px;
